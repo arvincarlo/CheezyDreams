@@ -5,7 +5,6 @@ import MenuItem from "./MenuItem";
 
 function Menu() {
   const menu = useLoaderData();
-  console.log(menu);
   
   return (
     <ul>
@@ -14,7 +13,7 @@ function Menu() {
   );
 }
 
-export async function loader() {
+export async function loader(object) {
   const menu = getMenu();
   return menu;
 }
