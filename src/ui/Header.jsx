@@ -5,7 +5,7 @@ import Username from '../features/user/Username';
 
 function Header() {
   return (
-    <header className="border-b border-stone-200 bg-yellow-500 px-4 py-3 uppercase">
+    <header className="border-b border-stone-200 bg-yellow-500 px-4 py-3 uppercase sm:p-6">
       <Link to="/" className="tracking-widest">
         Cheezy Dreams Co.
       </Link>
