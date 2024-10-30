@@ -29,8 +29,10 @@ const fakeCart = [
 ];
 
 function Cart() {
-    const cart = fakeCart;
+    // const cart = fakeCart;
     const {username} = useSelector(state => state.user);
+    const {cart} = useSelector(state => state.cart);
+    console.log(cart);
 
     return (
         <div className="px-4 py-3">
