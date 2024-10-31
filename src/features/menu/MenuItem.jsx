@@ -17,7 +17,7 @@ function MenuItem({ pizza }) {
             totalPrice: unitPrice * 1
         };
 
-        // Dispatch to the cartSlice store
+        // Dispatch the action to the cartSlice store
         dispatch(addItem(newItem));
     }
 
