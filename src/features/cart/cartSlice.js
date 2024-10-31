@@ -62,4 +62,13 @@ export const getTotalCartQuantity = (state) => state.cart.cart.reduce((sum, item
 // Get the total Price of the Cart
 export const getTotalCartPrice = (state) => state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
 
+// Get the Cart items
+export const getCart = state => state.cart.cart;
+
+// Get the username
+export const getUser = state => state.user.user;
+
+// Get the quantity by ID
+export const getCurrentQuantityById = (id) => state => state.cart.cart.find(item => item.pizzaId === id)?.quantity ?? 0;
+
 // Redux Reselect
