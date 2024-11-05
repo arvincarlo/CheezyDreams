@@ -73,4 +73,4 @@ export const getUser = state => state.user.user;
 // Get the quantity by ID
 export const getCurrentQuantityById = (id) => state => state.cart.cart.find(item => item.pizzaId === id)?.quantity ?? 0;
 
-// Redux Reselect
+// Redux Reselect - recommended

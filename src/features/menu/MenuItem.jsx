@@ -52,7 +52,7 @@ function MenuItem({ pizza }) {
                     {isInCart && 
                         <div className="flex items-center gap-2 sm:gap-8">
                             <UpdateItemQuantity pizzaId={id} currentQuantity={currentQuantity}/>
-                            <DeleteItem pizzaId={id}>Remove from Cart</DeleteItem>
+                            <DeleteItem pizzaId={id} type="warning">Remove from Cart</DeleteItem>
                         </div>
                     }
                 </div>
