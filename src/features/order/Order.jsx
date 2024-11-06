@@ -3,14 +3,13 @@ import { useEffect } from "react";
 
 import { getOrder } from "../../services/apiRestaurant";
 import OrderItem from "./OrderItem";
-
-// Test ID: IIDSAT
-
+import UpdateOrder from "./UpdateOrder";
 import {
     calcMinutesLeft,
     formatCurrency,
     formatDate,
 } from "../../utils/helpers";
+// Test ID: IIDSAT
 
 function Order() {
     const order = useLoaderData();
@@ -82,6 +81,7 @@ function Order() {
                     {formatCurrency(orderPrice + priorityPrice)}
                 </p>
             </div>
+            {!priority && <UpdateOrder order={order}/>}
         </div>
     );
 }
